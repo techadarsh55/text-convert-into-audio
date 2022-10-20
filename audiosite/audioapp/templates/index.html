@@ -1,0 +1,57 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/base.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/material.css'%}" />
+    <title>text to spech</title>
+  </head>
+  <body>
+<header>  		
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/"><span class="material-symbols-rounded" style="font-size: 35px; color: #3b5cbf;">graphic_eq</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="text">Text</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="video">Video</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+
+<main style="background: linear-gradient(0.5turn, #3b5cbf, #b5b3b3, #6e6d6d); height: 91vh;">
+    <div class="py-5 text-center" style="">
+    <span class="material-symbols-rounded" style="font-size:55px; text-shadow: 0 0 2px #fff, 0 0 3px #fff;">graphic_eq</span>
+    <h1 class="display-5 fw-bold text-light" style="text-shadow: 0 0 3px #696a6b, 0 0 3px #696a6b;">Text To Speech</h1>
+    <div class="col-lg-6 p-4 mx-auto">
+      <p class="lead mb-4 text-light" style="">Hey Users welcome to Text to Speech Web application. You can convert text into audio and also you can download this audio file.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="text"><button type="button" class="btn px-4 gap-3" id="convert">Convert Text</button></a>
+
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+
+</footer>
+ 	<script type="text/javascript" src="{% static 'js/boot.js'%}"></script>
+ 	<script type="text/javascript" src="{% static 'js/p.js'%}"></script>
+  </body>
+</html>

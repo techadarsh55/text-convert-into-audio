@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/base.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/material.css'%}" />
+    <title>text to spech</title>
+  </head>
+  <body>
+
+<main class="pt-3 bg-dark" style="height:100vh;">
+ <div class="container p-5 bg-dark" style="padding-top:25%;">
+    <div class="row text-center mt-5">
+      <div>
+        <audio controls class="" style="">
+          <source src="{{data}}" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="row gap-1 justify-content-center">
+        <a href="{{data}}" class="btn col-sm-6 btn-success" download>Download</a>
+        <br>
+        <a href="text"  class="btn col-sm-6 btn-primary">Back</a>
+      </div>
+
+    </div>
+ </div>
+
+
+
+
+</main>
+  <script type="text/javascript" src="{% static 'js/boot.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/p.js'%}"></script>
+  </body>
+</html>
